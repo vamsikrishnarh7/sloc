@@ -1,0 +1,58 @@
+.events-wrapper{
+    
+    width: 80%;
+    margin: 30px auto;
+    z-index: -1;
+    
+}
+.events-container{
+    position: relative;
+    display: flex;
+    padding: 25px;
+    border : 1px solid rgb(47,141,70);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.events-container img{
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.events-container p{
+    color: rgb(142,152,156);
+    font-weight: bold;
+}
+.events-container h2{
+    margin-bottom: 20px;
+}
+.events-container h4{
+    color: rgb(47,141,70);
+    margin-top: 30px;
+}
+.timings{
+    position: absolute;
+    display: flex;
+    bottom: 25px;
+
+}
+.time, .date{
+    display: flex;
+
+}
+.time img, .date img{
+    width: 28px;
+    margin-right: 10px;
+}
+.time p, .date p{
+    margin-right: 15px;
+    color: black;
+}
+.register-btn{
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(47,141,70);
+    bottom: 25px;
+    right: 30px;
+    border: none;
+    border-radius: 5px;
+}

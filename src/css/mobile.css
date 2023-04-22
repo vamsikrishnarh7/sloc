@@ -1,0 +1,104 @@
+@media (max-width: 900px) {
+
+    /* header {
+        position: static;
+    } */
+
+    .navbar-container {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-left{
+        margin-left: 0;
+    }
+    
+    .about-section {
+        padding: 32px 0px;
+        text-align: center;
+    }
+
+    .about-section-motto {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about-section-subtext {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+
+    .about-section-btn-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    /* --------------footer section--------------- */
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .community, .socials{
+        margin-bottom: 20px;
+    }
+    .community h3, .socials h3{
+        margin-bottom: 10px;
+    }
+    .community ul, .socials ul{
+        align-items: center;
+    }
+    .contact-us{
+        border: 0;
+        padding-left: 0;
+        align-items: center;
+    }
+    .contact-us h3{
+        border-bottom: 1px solid white;
+        margin-bottom: 20px;
+    }
+    /*-------------- events page------------------- */
+    .events-wrapper{
+        width: 90%;
+        z-index: -1;
+    }
+    .events-container{
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+    }
+    .events-container img{
+        z-index: -1;
+    }
+    .timings{
+        margin-top: 10px;
+        position: static;
+    }
+    .register-btn{
+        position: static; 
+        margin-top: 10px;     
+    }
+    .time img, .date img{
+        width: 28px;
+        height: 28px;
+    }
+    .event-create-navbar{
+        position: sticky;
+        top: 150px;
+        margin: 20px 5%;
+        padding: 25px 10px;
+    }
+    .event-create-navbar ul{
+        justify-content: space-between;
+    }
+    .abstract-wrapper, .date-wrapper{
+        margin: 20px 5%;
+        width: 90%;
+    }
+    .poster-upload-container input{
+        width: 150px;
+    }
+}
+
