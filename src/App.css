@@ -246,6 +246,9 @@ header {
     bottom: 55px;
     right: 0;
 }
+.login-error{
+    color: red;
+}
 /* ------------------organize event----------------- */
 .organize-event h1{
     width: fit-content;
@@ -289,6 +292,14 @@ header {
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 24px;
+}
+.abstract-wrapper button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    background-color: rgb(47,141,70);
 }
 
 input:focus, textarea:focus{
