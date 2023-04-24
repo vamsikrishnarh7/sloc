@@ -24,7 +24,7 @@ function App() {
   const {currentUser} = useContext(AuthContext);
 
   const RequireAuth = ({children}) => {
-    return currentUser ? (children) : <Navigate to="/sloc/admin" />;
+    return currentUser ? (children) : <Navigate to="/admin" />;
   }
   return (
     
@@ -32,9 +32,9 @@ function App() {
       <Nav />
       
       <Routes>
-        <Route exact path='/sloc/events' element={<EventsPage/>}></Route>
-        <Route exact path='/sloc/admin' element = {<AdminPage/>}></Route>
-        <Route exact path='/sloc/organize-event' element = {<RequireAuth><OrganizeEvent/></RequireAuth>}>
+        <Route exact path='/events' element={<EventsPage/>}></Route>
+        <Route exact path='/admin' element = {<AdminPage/>}></Route>
+        <Route exact path='/organize-event' element = {<RequireAuth><OrganizeEvent/></RequireAuth>}>
             <Route path="abstract" element={<Abstract/>}></Route>
             <Route path="preview" element = {<Preview/>}></Route>        
         </Route>

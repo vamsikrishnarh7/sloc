@@ -14,16 +14,16 @@ let Nav = () => {
             <div className="nav-right">
               <ul className="nav-items-list">
                 <li className="nav-items nav-item1">
-                  <Link to="/sloc" className="navlinks">Home</Link>
+                  <Link to="/" className="navlinks">Home</Link>
                 </li>
                 <li className="nav-items nav-item1">
-                  <Link to="/sloc/resources" className="navlinks">Resources</Link>
+                  <Link to="/resources" className="navlinks">Resources</Link>
                 </li>
                 <li className="nav-items nav-item2">
-                  <Link to="/sloc/events" className="navlinks">Events</Link>
+                  <Link to="/events" className="navlinks">Events</Link>
                 </li>
                 <li className="nav-items nav-item3">
-                  <Link to="/sloc/about" className="navlinks">About us</Link>
+                  <Link to="/about" className="navlinks">About us</Link>
                 </li>
               </ul>
             </div>

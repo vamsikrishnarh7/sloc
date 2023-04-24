@@ -25,7 +25,7 @@ let Preview = () => {
     console.log(data);
     let handlePost = () => {
         localStorage.setItem('currentEventId',null);
-        navigate("/sloc/events");
+        navigate("/events");
     }
     return(
         <>
