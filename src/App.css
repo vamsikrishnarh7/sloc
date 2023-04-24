@@ -250,6 +250,7 @@ header {
     color: red;
 }
 /* ------------------organize event----------------- */
+
 .organize-event h1{
     width: fit-content;
     margin:0;    
@@ -273,7 +274,9 @@ header {
 .event-create-navbar li{
     text-decoration: none;
 }
-
+.event-abstract{
+    display: flex;
+}
 .abstract-wrapper , .date-wrapper{
     width: 45%;
     background-color: rgb(240,245,245);
@@ -337,11 +340,13 @@ input[type=file]::file-selector-button {
 .preview-container{
     width: 80%;
     margin: 25px auto;
+    border-radius: 5px;
     background-color: rgb(240,245,245);
     padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10;
 }
 .preview-container button{
     border: none;
@@ -353,6 +358,22 @@ input[type=file]::file-selector-button {
 }
 .preview-container img{
     width: 400px;
+}
+.preview-container h3{
+    margin-top: 15px;
+}
+.preview-timings{
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+.preview-date, .preview-time{
+    display: flex;
+    align-items: center;
+}
+.preview-time img,.preview-date img{
+    width: 28px;
+    margin-right: 10px;
 }
 /* ------------------footer section----------------- */
 footer{

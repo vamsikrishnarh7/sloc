@@ -100,5 +100,8 @@
     .poster-upload-container input{
         width: 150px;
     }
+    .event-abstract{
+        flex-direction: column;
+    }
 }
 

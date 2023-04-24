@@ -34,7 +34,21 @@ let Preview = () => {
                 <div className="preview-container">
                 <img src={data[0].img}/>
                 <h1>{data[0].eventName[0].toUpperCase()+data[0].eventName.slice(1)}</h1>
+                <p>{data[0].aboutEvent}</p>
+                <div className="preview-timings">
+                        <div className="preview-time">
+                            <img src="../icons/clock.png" alt=""/>
+                            <p>{data[0].eventStartTime}</p>
+                        </div>
+                        <div className="preview-date">
+                            <img src="../icons/calendar.png" alt=""/>
+                            <p>{data[0].eventStarts}</p>
+                        </div>
+                </div>
+                <h3>Registration link :</h3>
+                <p>{data[0].regLink}</p> 
                 <button onClick={handlePost}>Post</button>
+
             </div> 
             )
         })}       

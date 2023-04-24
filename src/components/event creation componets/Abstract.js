@@ -15,8 +15,6 @@ let Abstract = () => {
   const [data, setData] = useState(initialState);
   const { eventName, aboutEvent, entryFee, teamSize, regLink } = data;
   const [poster, setPoster] = useState(null);
-  const [progress, setProgress] = useState(null);
-  const [submit, setIsSubmit] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,7 +28,6 @@ let Abstract = () => {
         (snapshot) => {
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          setProgress(progress);
           switch (snapshot.state) {
             case "paused":
               console.log("upload is paused");
@@ -62,7 +59,6 @@ let Abstract = () => {
 
   let validate = async (e) => {
     e.preventDefault();
-    setIsSubmit(true);
     let res = await addDoc(collection(db, "events"), {
       ...data,
       timestamp : serverTimestamp()
@@ -74,7 +70,7 @@ let Abstract = () => {
 
   return (
     <>
-      <div className="">
+      <div className="event-abstract">
         <form onSubmit={validate} className="abstract-wrapper">
           <label>Name of the event</label>
           <input
