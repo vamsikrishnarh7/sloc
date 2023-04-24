@@ -26,8 +26,8 @@ let Abstract = () => {
       uploadTask.on(
         "state_changed",
         (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          // const progress =
+          //   (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           switch (snapshot.state) {
             case "paused":
               console.log("upload is paused");

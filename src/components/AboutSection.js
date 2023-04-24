@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 let AboutSection = () => {
     return (
         <>
@@ -9,7 +11,7 @@ let AboutSection = () => {
                 in various fields of computer science and have an inclusive community focusing on a
                 <span className="span-text">learn by doing</span> approach.  </p>
             <div className="about-section-btn-container">
-                <button className="about-section-btn">Ongoing Events</button>
+                <Link to="/events"><button className="about-section-btn">Ongoing Events</button></Link>
                 <button className="about-section-btn">Projects list</button>
             </div>
         </div>

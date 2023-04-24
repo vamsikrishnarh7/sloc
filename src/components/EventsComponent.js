@@ -1,6 +1,7 @@
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../firebase-config";
+import { Link } from "react-router-dom";
 
 let EventsComponent = (params) => {
 
@@ -19,7 +20,7 @@ let EventsComponent = (params) => {
           setData(list);
         }
         fetchData();
-      },[]);
+      });
       
     return (
         <>
@@ -41,8 +42,9 @@ let EventsComponent = (params) => {
                             <p>{ele.eventStarts}</p>
                         </div>
                     </div>
+                    <Link to={ele.regLink} ><button className="register-btn">Register</button></Link>
                 </div>
-                <a href={ele.regLink}><button className="register-btn">Register</button></a>
+                
             </div>
             )
         })}

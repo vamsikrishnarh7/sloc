@@ -10,13 +10,14 @@ import {
   Navigate
 } from 'react-router-dom'
 import EventsPage from './pages/EventsPage';
-import AboutSection from './components/AboutSection';
 import AdminPage from './pages/AdminPage';
 import OrganizeEvent from './pages/OrganizeEvent';
 import Abstract from "./components/event creation componets/Abstract";
 import Preview from './components/event creation componets/Preview';
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
+import Resources from './components/Resources';
+import AboutUs from './components/AboutUs';
 
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
             <Route path="abstract" element={<Abstract/>}></Route>
             <Route path="preview" element = {<Preview/>}></Route>        
         </Route>
-        <Route exact path='/about' element = {<AboutSection/>}></Route>
+        <Route path='/resources' element = {<Resources/>}></Route>
+        <Route exact path='/about' element = {<AboutUs/>}></Route>
         <Route exact path='/' element = {<MainSection/>}></Route>
       </Routes>
       

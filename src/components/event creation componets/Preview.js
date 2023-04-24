@@ -21,7 +21,7 @@ let Preview = () => {
         setData(list);
       }
       fetchData();
-    },[])
+    })
     console.log(data);
     let handlePost = () => {
         localStorage.setItem('currentEventId',null);

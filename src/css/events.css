@@ -1,5 +1,4 @@
 .events-wrapper{
-    
     width: 80%;
     margin: 30px auto;
     z-index: -1;
@@ -51,6 +50,7 @@
     color: black;
 }
 .register-btn{
+    text-decoration: none;
     color: white;
     cursor: pointer;
     position: absolute;

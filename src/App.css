@@ -204,7 +204,78 @@ header {
 .reason6{
     border-bottom: 5px solid rgb(253,200,164);
 }
+/* ----------------resource page-------------------- */
+.resource-container{
+    margin: 10px auto;
+    padding: 25px 10%;
+    width: 80%;
+}
+.resource-wrapper{display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
+}
+.resource{
+    background-color: rgb(244,244,244);
+    border-radius: 5px;
+    /* border: 1px solid rgb(47,141,70); */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 4px 8px 0px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+.resource img{
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+/* ----------------about us page-------------------- */
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+}
+.about-us-container{
+    padding: 30px;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.team-member{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.team-member img{
+    width: 192px;
+}
+.socials-of-team{
+    padding-block: 5px;
+    background-color: rgb(47,141,70) ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.socials-of-team img{
+    width: 28px;
+}
 /* ------------------admin page--------------------- */
 .login-container{
     background-color: rgb(244,244,244);
@@ -217,7 +288,6 @@ header {
     padding: 25px;
 }
 .login-form{
-    position: relative;
     display: flex;
     flex-direction: column;
     font-size: large;
@@ -252,8 +322,8 @@ header {
 /* ------------------organize event----------------- */
 
 .organize-event h1{
-    width: fit-content;
-    margin:0;    
+    display: flex;   
+    justify-content: center;
 }
 .event-create-navbar{
     background-color: rgb(240,245,245); 
