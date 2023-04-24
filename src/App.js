@@ -32,13 +32,13 @@ function App() {
       <Nav />
       
       <Routes>
-        <Route path='/sloc/events' element={<EventsPage/>}></Route>
-        <Route path='/sloc/admin' element = {<AdminPage/>}></Route>
-        <Route path='/sloc/organize-event' element = {<RequireAuth><OrganizeEvent/></RequireAuth>}>
+        <Route exact path='/sloc/events' element={<EventsPage/>}></Route>
+        <Route exact path='/sloc/admin' element = {<AdminPage/>}></Route>
+        <Route exact path='/sloc/organize-event' element = {<RequireAuth><OrganizeEvent/></RequireAuth>}>
             <Route path="abstract" element={<Abstract/>}></Route>
             <Route path="preview" element = {<Preview/>}></Route>        
         </Route>
-        <Route path='/sloc/about' element = {<AboutSection/>}></Route>
+        <Route exact path='/sloc/about' element = {<AboutSection/>}></Route>
         <Route exact path='/sloc' element = {<MainSection/>}></Route>
       </Routes>
       
