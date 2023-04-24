@@ -65,7 +65,7 @@ let Abstract = () => {
     });
     console.log(res.id);
     localStorage.setItem("currentEventId",res.id);
-    navigate("/organize-event/preview");   
+    navigate("/sloc/organize-event/preview");   
   };
 
   return (

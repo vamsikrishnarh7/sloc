@@ -6,8 +6,8 @@ let EventCreationNav = () => {
       <div className="event-create-navbar">
       
         <ul>
-          <Link to='/organize-event/abstract' className="navlinks"><li className="nav-items">Abstract</li></Link>
-          <Link to='/organize-event/preview' className="navlinks"><li className="nav-items">Preview</li></Link>
+          <Link to='/sloc/organize-event/abstract' className="navlinks"><li className="nav-items">Abstract</li></Link>
+          <Link to='/sloc/organize-event/preview' className="navlinks"><li className="nav-items">Preview</li></Link>
         </ul>
       </div>
       
