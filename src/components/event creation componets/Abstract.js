@@ -63,16 +63,18 @@ let Abstract = () => {
   let validate = async (e) => {
     e.preventDefault();
     setIsSubmit(true);
-    await addDoc(collection(db, "events"), {
+    let res = await addDoc(collection(db, "events"), {
       ...data,
       timestamp : serverTimestamp()
     });
-    navigate("/organize-event/dates");   
+    console.log(res.id);
+    localStorage.setItem("currentEventId",res.id);
+    navigate("/organize-event/preview");   
   };
 
   return (
     <>
-      <div>
+      <div className="">
         <form onSubmit={validate} className="abstract-wrapper">
           <label>Name of the event</label>
           <input
@@ -107,7 +109,7 @@ let Abstract = () => {
             value={teamSize}
             onChange={handleChange}
           />
-          <label htmlFor="images" class="poster-upload-container">
+          <label htmlFor="images" className="poster-upload-container">
             <h4>Upload Event poster</h4>
             <input
               type="file"
@@ -126,12 +128,19 @@ let Abstract = () => {
             onChange={handleChange}
             required
           />
-          <button
-            type="submit"
-            disabled={progress != null && progress < 100}
-          >
-            Next
-          </button>
+        </form>
+        <form onSubmit={validate} className="date-wrapper">
+          <label>Registration Start</label>
+          <input type="date" name="regStartDate" onChange={handleChange} required/>
+          <label>Registration End</label>
+          <input type="date" name="regEndDate" onChange={handleChange} required />
+          <label>Event Begins</label>
+          <input type="date" name="eventStarts" onChange={handleChange} required />
+          <label>Event Ends</label>
+          <input type="date" name="eventEnds" onChange={handleChange} required />
+          <label>Event Timings</label>
+          <input type="time" name="eventStartTime" onChange={handleChange} required />
+          <button type="submit">Next</button>
         </form>
       </div>
     </>

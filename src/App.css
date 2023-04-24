@@ -293,7 +293,7 @@ header {
     font-size: 18px;
     margin-bottom: 24px;
 }
-.abstract-wrapper button{
+.date-wrapper button{
     border: none;
     border-radius: 5px;
     color: white;
@@ -332,6 +332,27 @@ input[type=file]::file-selector-button {
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
+}
+
+.preview-container{
+    width: 80%;
+    margin: 25px auto;
+    background-color: rgb(240,245,245);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preview-container button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    background-color: rgb(47,141,70);
+}
+.preview-container img{
+    width: 400px;
 }
 /* ------------------footer section----------------- */
 footer{
