@@ -12,7 +12,7 @@ const initialState = {
 };
 
 let Abstract = () => {
-  const [data, setData] = useState(initialState);
+  const [data, setData] = useState({initialState});
   const { eventName, aboutEvent, entryFee, teamSize, regLink } = data;
   const [poster, setPoster] = useState(null);
   const navigate = useNavigate();

@@ -18,9 +18,10 @@ let EventsComponent = (params) => {
               // console.log(updateDb.img)
           });
           setData(list);
+          console.log(data);
         }
         fetchData();
-      });
+    },[]);
       
     return (
         <>
