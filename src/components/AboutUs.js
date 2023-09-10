@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className='about-us'>
     <div className='about-us-container'>
-        <h1>Coding Club SVEC</h1>
+        <h1>Coding Club SVCE</h1>
         <p>The main aim of coding club is that to make every student of our college implement his/her 
         programmatic knowledge by contributing in mini projects and participating workshops.
         Learning only theory part of subjects like Data Structures,Java,SQL etc.. 
