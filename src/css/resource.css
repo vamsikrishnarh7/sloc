@@ -1,0 +1,48 @@
+.resource-container{
+    width: 80%;
+    margin: 30px auto;
+}
+.resource-wrapper{
+    margin-top: 10px;
+    display: flex;
+    row-gap: 20px;
+    column-gap: 66px;
+    flex-wrap: wrap;
+}
+.resource{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 8px;
+    width: 350px;
+}
+.resource button{
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+}
+.resource button:hover{
+    background-color: black;
+    color: white;
+}
+.resource1{
+    background-color: beige;
+}
+.resource2{
+    background-color: #e1cfff;
+}
+.resource3{
+    background-color: #feefc6;
+}
+.resource4{
+    background-color: #d2f6d2;
+}
+.resource5{
+    background-color: #e1e5fe;
+}
+.resource6{
+    background-color: beige;
+}

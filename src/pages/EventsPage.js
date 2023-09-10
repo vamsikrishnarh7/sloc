@@ -7,7 +7,7 @@ let EventsPage = () => {
         <>
         
         <div className="events-wrapper">
-            <h1 >Events</h1> 
+            <h1 >Upcoming events you shouldn't miss</h1> 
             <EventsComponent />
         </div>
         </>

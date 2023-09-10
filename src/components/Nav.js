@@ -23,8 +23,11 @@ let Nav = () => {
                   <Link to="/events" className="navlinks">Events</Link>
                 </li>
                 <li className="nav-items nav-item3">
-                  <Link to="/about" className="navlinks">About us</Link>
+                  <Link to="/clubs" className="navlinks">Clubs</Link>
                 </li>
+                <li className="nav-items nav-item3">
+                  <Link to="/about" className="navlinks">About us</Link>
+                </li>                
               </ul>
             </div>
           </div>

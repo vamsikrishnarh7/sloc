@@ -1,0 +1,64 @@
+.club-wrapper{
+    width: 80%;
+    margin: 30px auto;
+}
+.club-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 250px;
+    row-gap: 10px;
+    margin-top: 16px;
+}
+.club{
+    border-radius: 10px;
+    padding: 16px;
+    width: 450px;
+}
+.club img{
+    overflow: visible;
+    margin-right: 10px;
+    background-color: #a97ffc;
+    border-radius: 50%;
+    width: 50px;
+}
+.club button{
+    background-color: black;
+    color: white;
+    height: fit-content;
+    border-radius: 10px;
+    padding-block: 5px;
+    padding-left: 8px;
+    padding-right:8px;
+}
+.club-header{
+    display: flex;
+    margin-bottom: 10px;
+}
+.club-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.club1{
+    background-color: #e1cfff;
+}
+.club2{
+    background-color: #d2f6d2;
+}
+.club2 img{
+    background-color: #a4eca3;
+}
+.club3{
+    background-color: #feefc6;
+}
+.club3 img{
+    background-color: #fdde8c;
+}
+.club4{
+    background-color: #e1e5fe;
+}
+.club4 img{
+    background-color: #c0c7fd;
+}
