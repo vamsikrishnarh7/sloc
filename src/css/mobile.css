@@ -1,3 +1,10 @@
+:root{
+    --bar-width:25px;
+    --bar-height: 3px;
+    --hamburger-gap : 5px;
+    --animation-timing : 200ms ease-in-out;
+    --hamburger-height:calc(var(--bar-height)*3 + var(var(--hamburger-gap)*2));
+}
 @media (max-width: 900px) {
 
     /* header {
@@ -13,7 +20,88 @@
     .nav-left{
         margin-left: 0;
     }
-    
+    .menu-container{
+        display: none;
+    }
+    .hamburger-menu::after,
+    .hamburger-menu::before,
+    .hamburger-menu input{
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: black;
+        transform-origin: left center;
+        transition: opacity var(--animation-timing), width var(--animation-timing),rotate var(--animation-timing),translate var(--animation-timing);
+    }
+    .nav-right{
+        display: none;
+    }
+    .menu-container{
+        display: block;
+    }
+    .hamburger-menu{
+        --x-width : calc(var(--hamburger-height) * 1.41421356237);
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        position: absolute;
+        top: 28px;
+        left: 16px;
+        z-index: 2;
+    }
+    .hamburger-menu input{
+        appearance: none;
+        padding:0;
+        pointer-events: none;
+        outline: none;
+    }
+    .hamburger-menu:has(input:checked)::before{
+        rotate: 45deg;
+        /* width: var(--x-width); */
+        /* translate: 0 calc(var(--bar-height)/ -2); */
+    }
+    .hamburger-menu:has(input:checked)::after{
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height)/2);
+    }
+    .hamburger-menu input:checked{
+        opacity: 0;
+        width: 0;
+    }
+    .sidebar{
+        /* pointer-events: none; */
+        position: absolute;
+        top: 0;
+        transition: translate var(--animation-timing);
+        padding-top: 6em;
+        translate: -100%;
+        min-height: 100vh;
+        background-color: white;
+        min-width: 70%;
+    }
+    .hamburger-menu:has(input:checked) + .sidebar{
+        translate: 0;
+    }
+    .nav-items-list{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .nav-items{
+        width: max-content;
+    }
+    /* clubs page */
+    .club-wrapper{
+        width: 90%;
+    }
+    /* resource page */
+    .resource-container{
+        width: 90%;
+    }
+    .resource img{
+        max-width: 250px;
+    }
     .about-section {
         padding: 32px 0px;
         text-align: center;

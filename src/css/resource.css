@@ -1,6 +1,6 @@
 .resource-container{
     width: 80%;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 .resource-wrapper{
     margin-top: 10px;
@@ -8,6 +8,7 @@
     row-gap: 20px;
     column-gap: 66px;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 .resource{
     display: flex;

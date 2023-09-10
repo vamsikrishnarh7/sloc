@@ -94,7 +94,9 @@ header {
     display: flex;
     align-items: center;
 }
-
+.menu-container{
+    display: none;
+}
 /* ----------------main content--------------------*/
 .about-section{
     padding: 140px 0px;
