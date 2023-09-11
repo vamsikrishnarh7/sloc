@@ -95,6 +95,11 @@
     .club-wrapper{
         width: 90%;
     }
+    /* placements club  */
+    .posts-container{
+        width: 90%;
+        margin: 0 auto;
+    }
     /* resource page */
     .resource-container{
         width: 90%;

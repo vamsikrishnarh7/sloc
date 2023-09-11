@@ -46,6 +46,7 @@ let Nav = () => {
               <input type="checkbox" />
             </label>
             <aside className="sidebar">
+            
               <nav>
                 <ul className="nav-items-list">
                   <li className="nav-items nav-item1">
@@ -68,7 +69,7 @@ let Nav = () => {
                       Clubs
                     </Link>
                   </li>
-                  <li className="nav-items nav-item3">
+                  <li className="nav-items nav-item4">
                     <Link to="/about" className="navlinks">
                       About us
                     </Link>

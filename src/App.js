@@ -1,4 +1,5 @@
 import './App.css';
+import './css/student-post.css'
 import './css/resource.css'
 import './css/clubs.css'
 import './css/events.css'
@@ -21,6 +22,8 @@ import { AuthContext } from './context/AuthContext';
 import Resources from './components/Resources';
 import AboutUs from './components/AboutUs';
 import Clubs from './components/Clubs';
+import Placements from './pages/Placements';
+import TechClub from './pages/TechClub';
 
 
 function App() {
@@ -36,7 +39,11 @@ function App() {
       <Nav />
       
       <Routes>
-        <Route exact path='/clubs' element={<Clubs/>}></Route>
+        <Route exact path='/clubs' element={<Clubs/>}>
+            
+        </Route>
+        <Route path='/placement-club' element={<Placements />}></Route>
+        <Route path='/tech-club' element={<TechClub />}></Route>
         <Route exact path='/events' element={<EventsPage/>}></Route>
         <Route exact path='/admin' element = {<AdminPage/>}></Route>
         <Route exact path='/organize-event' element = {<RequireAuth><OrganizeEvent/></RequireAuth>}>
